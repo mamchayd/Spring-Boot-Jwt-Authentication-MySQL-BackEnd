@@ -1,5 +1,6 @@
 package com.grokonez.jwtauthentication.model;
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,9 +18,13 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
 import org.hibernate.annotations.NaturalId;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
+@Data
 @Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
             "username"
@@ -39,7 +44,23 @@ public class User{
 
     @NotBlank
     @Size(min=3, max = 50)
+    private String prenom;
+
+    @NotBlank
+    @Size(min=3, max = 50)
+    private String tel;
+
+    @NotBlank
+    @JsonFormat(pattern="yyyy-MM-dd")
+    private Date dateNaissance;
+
+    @NotBlank
+    @Size(min=3, max = 50)
     private String username;
+
+    @NotBlank
+    @Size(min=3, max = 250)
+    private String adress;
 
     @NaturalId
     @NotBlank
@@ -52,18 +73,22 @@ public class User{
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "user_roles", 
-    	joinColumns = @JoinColumn(name = "user_id"), 
+    @JoinTable(name = "user_roles",
+    	joinColumns = @JoinColumn(name = "user_id"),
     	inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();
 
     public User() {}
 
-    public User(String name, String username, String email, String password) {
+    public User(String name,String prenom,Date dateNaissance,String tel, String username,String adresse,String email, String password) {
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
+        this.tel=tel;
+        this.prenom=prenom;
+        this.dateNaissance=dateNaissance;
+        this.adress=adresse;
     }
 
     public Long getId() {

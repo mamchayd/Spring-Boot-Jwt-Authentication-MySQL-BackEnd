@@ -74,7 +74,8 @@ public class AuthRestAPIs {
 		}
 
 		// Creating user's account
-		User user = new User(signUpRequest.getName(), signUpRequest.getUsername(), signUpRequest.getEmail(),
+		User user = new User(signUpRequest.getName(),signUpRequest.getPrenom(),signUpRequest.getDateNaissance(),signUpRequest.getTel(),
+				signUpRequest.getUsername(),signUpRequest.getAdress(), signUpRequest.getEmail(),
 				encoder.encode(signUpRequest.getPassword()));
 
 		Set<String> strRoles = signUpRequest.getRole();
@@ -88,12 +89,29 @@ public class AuthRestAPIs {
 				roles.add(adminRole);
 
 				break;
-			case "pm":
-				Role pmRole = roleRepository.findByName(RoleName.ROLE_PM)
+			case "etudiant":
+				Role etudiantRole = roleRepository.findByName(RoleName.ROLE_ETUDIANT)
 						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
-				roles.add(pmRole);
+				roles.add(etudiantRole);
 
 				break;
+			case "consultant":
+				Role consultantRole = roleRepository.findByName(RoleName.ROLE_CONSULTANT)
+							.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+					roles.add(consultantRole);
+				break;
+			case "professeur":
+					Role professeurRole = roleRepository.findByName(RoleName.ROLE_PROFESSEUR)
+							.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+					roles.add(professeurRole);
+
+					break;
+			case "parent":
+					Role parentRole = roleRepository.findByName(RoleName.ROLE_PARENT)
+							.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));
+					roles.add(parentRole);
+
+					break;
 			default:
 				Role userRole = roleRepository.findByName(RoleName.ROLE_USER)
 						.orElseThrow(() -> new RuntimeException("Fail! -> Cause: User Role not find."));

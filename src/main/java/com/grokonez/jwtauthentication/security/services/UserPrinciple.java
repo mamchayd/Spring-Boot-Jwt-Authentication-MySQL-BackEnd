@@ -1,5 +1,6 @@
 package com.grokonez.jwtauthentication.security.services;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.grokonez.jwtauthentication.model.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
@@ -7,6 +8,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -22,18 +24,30 @@ public class UserPrinciple implements UserDetails {
 
     private String email;
 
+    private String tel;
+
+    private String adress;
+
+    private String prenom;
+
+    @JsonFormat(pattern="yyyy-MM-dd")
+    private Date dateNaissance;
+
     @JsonIgnore
     private String password;
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserPrinciple(Long id, String name, 
-			    		String username, String email, String password, 
+    public UserPrinciple(Long id, String name, String prenom, Date dateNaissance, String tel,
+			    		String username,String adress, String email, String password,
 			    		Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
+        this.prenom=prenom;
+        this.dateNaissance=dateNaissance;
+        this.adress=adress;
         this.password = password;
         this.authorities = authorities;
     }
@@ -46,7 +60,11 @@ public class UserPrinciple implements UserDetails {
         return new UserPrinciple(
                 user.getId(),
                 user.getName(),
+                user.getPrenom(),
+                user.getDateNaissance(),
+                user.getTel(),
                 user.getUsername(),
+                user.getAdress(),
                 user.getEmail(),
                 user.getPassword(),
                 authorities
@@ -64,6 +82,20 @@ public class UserPrinciple implements UserDetails {
     public String getEmail() {
         return email;
     }
+
+    public String getTel() {
+        return tel;
+    }
+    public String getPrenom() {
+        return prenom;
+    }
+    public String getAdress() {
+        return adress;
+    }
+    public Date getDateNaissance() {
+        return dateNaissance;
+    }
+
 
     @Override
     public String getUsername() {
@@ -104,7 +136,7 @@ public class UserPrinciple implements UserDetails {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        
+
         UserPrinciple user = (UserPrinciple) o;
         return Objects.equals(id, user.id);
     }

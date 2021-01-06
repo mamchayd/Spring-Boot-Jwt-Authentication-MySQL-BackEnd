@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53f45784-1883-40e6-9375-9c84ee1dff91" name="Default Changelist" comment="" />
+    <list default="true" id="53f45784-1883-40e6-9375-9c84ee1dff91" name="Default Changelist" comment="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootJwtAuthentication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootJwtAuthentication.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/SignUpForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/SignUpForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RoleName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RoleName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/roles.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/AuthRestAPIs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/AuthRestAPIs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/TestRestAPIs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/TestRestAPIs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/message/request/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/message/request/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/message/request/SignUpForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/message/request/SignUpForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/model/RoleName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/model/RoleName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/security/services/UserPrinciple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/security/services/UserPrinciple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/roles.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +50,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AngularJwtAuth" />
@@ -37,15 +62,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,26 +90,41 @@
       <option name="presentableId" value="Default" />
       <updated>1609626984213</updated>
       <workItem from="1609626985615" duration="9009000" />
-      <workItem from="1609668710030" duration="2243000" />
+      <workItem from="1609668710030" duration="3217000" />
+      <workItem from="1609674036778" duration="1398000" />
+      <workItem from="1609959187042" duration="13339000" />
     </task>
+    <task id="LOCAL-00001" summary="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL">
+      <created>1609671456725</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609671456725</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthTokenFilter.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthTokenFilter.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthTokenFilter.java</url>
           <line>39</line>
@@ -101,21 +139,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthTokenFilter.java</url>
           <line>46</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtAuthTokenFilter.java</url>
