@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53f45784-1883-40e6-9375-9c84ee1dff91" name="Default Changelist" comment="add/delete/affich requete" />
+    <list default="true" id="53f45784-1883-40e6-9375-9c84ee1dff91" name="Default Changelist" comment="modification dans affiche requete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +86,7 @@
       <workItem from="1609668710030" duration="3217000" />
       <workItem from="1609674036778" duration="1398000" />
       <workItem from="1609959187042" duration="13339000" />
-      <workItem from="1610134308989" duration="14465000" />
+      <workItem from="1610134308989" duration="14575000" />
     </task>
     <task id="LOCAL-00001" summary="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL">
       <created>1609671456725</created>
@@ -102,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610134981265</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modification dans affiche requete">
+      <created>1610159864939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610159864939</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL" />
     <MESSAGE value="add/delete/affich requete" />
-    <option name="LAST_COMMIT_MESSAGE" value="add/delete/affich requete" />
+    <MESSAGE value="modification dans affiche requete" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification dans affiche requete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
