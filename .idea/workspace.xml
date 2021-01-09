@@ -4,34 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53f45784-1883-40e6-9375-9c84ee1dff91" name="Default Changelist" comment="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/ReponseControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/RequeteControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/TypeRequeteControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/GestionRequete/AddReponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/GestionRequete/AddRequete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RequeteModels/Reponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RequeteModels/Requete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RequeteModels/TypeRequete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/RequeteRepositories/ReponseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/RequeteRepositories/RequeteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/RequeteRepositories/TypeReqRepository.java" afterDir="false" />
+    <list default="true" id="53f45784-1883-40e6-9375-9c84ee1dff91" name="Default Changelist" comment="add/delete/affich requete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/GestionRequete/AffichRequete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootJwtAuthentication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootJwtAuthentication.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/SpringBootJwtAuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/SpringBootJwtAuthenticationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/ReponseControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/ReponseControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/RequeteControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/RequetesControler/RequeteControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/GestionRequete/AddRequete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/GestionRequete/AddRequete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RequeteModels/Requete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/RequeteModels/Requete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/RequeteRepositories/RequeteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/RequeteRepositories/RequeteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/SpringBootJwtAuthenticationApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/SpringBootJwtAuthenticationApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/TestRestAPIs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/TestRestAPIs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/repository/UserRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,7 +99,7 @@
       <workItem from="1609668710030" duration="3217000" />
       <workItem from="1609674036778" duration="1398000" />
       <workItem from="1609959187042" duration="13339000" />
-      <workItem from="1610134308989" duration="451000" />
+      <workItem from="1610134308989" duration="14018000" />
     </task>
     <task id="LOCAL-00001" summary="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL">
       <created>1609671456725</created>
@@ -111,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609671456725</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add/delete/affich requete">
+      <created>1610134981265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610134981265</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +135,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentification spring boot &amp;&amp; spring security JWT &amp;&amp; MySQL" />
+    <MESSAGE value="add/delete/affich requete" />
+    <option name="LAST_COMMIT_MESSAGE" value="add/delete/affich requete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

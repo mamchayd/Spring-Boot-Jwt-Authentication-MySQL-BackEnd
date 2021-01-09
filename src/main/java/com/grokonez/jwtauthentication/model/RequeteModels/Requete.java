@@ -48,4 +48,8 @@ public class Requete {
 
 
     }
+
+    public String getUser() {
+        return this.user.getEmail();
+    }
 }

@@ -15,11 +15,16 @@ public class TestRestAPIs {
 		return ">>> User Contents!";
 	}
 
+
+
 	@GetMapping("/api/test/etudiant")
 	@PreAuthorize("hasRole('ETUDIANT') or hasRole('ADMIN')")
 	public String etudiantAccess() {
 		return ">>> etudiant Contents!";
 	}
+
+
+
 
 	@GetMapping("/api/test/consultant")
 	@PreAuthorize("hasRole('CONSULTANT') or hasRole('ADMIN')")

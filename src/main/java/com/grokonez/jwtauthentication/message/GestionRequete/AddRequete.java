@@ -26,12 +26,13 @@ public class AddRequete {
     @Column(columnDefinition = "MEDIUMTEXT")
     private String description ;
 
-    @NotBlank
-    @Size(max = 60)
-    @Email
-    private String email;
+
+    private String username;
 
     private String type;
+
+    private String name;
+    private String prenom;
 
     public Long getId() {
         return id;
@@ -45,11 +46,19 @@ public class AddRequete {
         return description;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
     public String getType() {
         return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPrenom() {
+        return prenom;
     }
 }

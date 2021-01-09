@@ -90,4 +90,12 @@ public class ReponseControler {
        Requete requete = requeteRepository.findById(addReponse.getRequeteId()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: req not find."));
         return ResponseEntity.ok(reponseRepository.findByRequete(requete));
     }
+
+
+    @DeleteMapping("/api/reponse/delete/{id}")
+    public ResponseEntity<Object> reponsedelete(@PathVariable Long id) {
+        reponseRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }

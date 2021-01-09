@@ -24,6 +24,7 @@ public interface RequeteRepository extends JpaRepository<Requete,Long> {
    List<Requete> findByDescriptionContains(@Param("mc") String req);
    Boolean existsByUser(String email);
 
+   Page<Requete> findByUser(User user,Pageable pageable);
    List<Requete> findByUser(User user);
    Optional<Requete> findByTitre(String titre);
    Optional<Requete> findById(Long id);

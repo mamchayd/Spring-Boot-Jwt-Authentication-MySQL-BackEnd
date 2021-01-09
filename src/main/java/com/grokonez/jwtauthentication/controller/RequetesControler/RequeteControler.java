@@ -3,6 +3,7 @@ package com.grokonez.jwtauthentication.controller.RequetesControler;
 
 
 import com.grokonez.jwtauthentication.message.GestionRequete.AddRequete;
+import com.grokonez.jwtauthentication.message.GestionRequete.AffichRequete;
 import com.grokonez.jwtauthentication.message.response.ResponseMessage;
 import com.grokonez.jwtauthentication.model.RequeteModels.Requete;
 import com.grokonez.jwtauthentication.model.RequeteModels.TypeRequete;
@@ -13,6 +14,7 @@ import com.grokonez.jwtauthentication.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -63,9 +65,9 @@ public class RequeteControler {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/api/requete/affich")
-    public ResponseEntity<?> requeteaffiche(@Valid @RequestBody AddRequete addRequete) {
-        User user= userRepository.findByEmail(addRequete.getEmail()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
+    @PostMapping ("/api/requete/affich")
+    public ResponseEntity<?> requeteaffiche(@Valid @RequestBody AffichRequete affichRequete) {
+        User user= userRepository.findByUsername(affichRequete.getUsername()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
 
         return ResponseEntity.ok(requeteRepository.findByUser(user));
     }
@@ -75,7 +77,7 @@ public class RequeteControler {
     public ResponseEntity<?> requeteadd(@Valid @RequestBody AddRequete addRequete) {
         // Creating user's account
 
-        User user= userRepository.findByEmail(addRequete.getEmail()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
+        User user= userRepository.findByUsername(addRequete.getUsername()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
         TypeRequete type= typeReqRepository.findByType(addRequete.getType()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: type not find."));
 
         Date date=new Date();
