@@ -2,6 +2,7 @@ package com.grokonez.jwtauthentication.controller.RequetesControler;
 
 
 import com.grokonez.jwtauthentication.message.GestionRequete.AddReponse;
+import com.grokonez.jwtauthentication.message.GestionRequete.AffichReponse;
 import com.grokonez.jwtauthentication.message.response.ResponseMessage;
 import com.grokonez.jwtauthentication.model.RequeteModels.Reponse;
 import com.grokonez.jwtauthentication.model.RequeteModels.Requete;
@@ -84,10 +85,11 @@ public class ReponseControler {
     }
 
 
-    @GetMapping("/api/reponse/affich")
-    public ResponseEntity<?> requeteaffiche(@Valid @RequestBody AddReponse addReponse) {
+    @PostMapping("/api/reponse/affich")
+    public ResponseEntity<?> repnseaffiche(@Valid @RequestBody AffichReponse affichReponse) {
+        System.out.println("mary"+affichReponse.getIdRequete());
        // User user= userRepository.findByEmail(addReponse.getEmail()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
-       Requete requete = requeteRepository.findById(addReponse.getRequeteId()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: req not find."));
+       Requete requete = requeteRepository.findById(affichReponse.getIdRequete()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: req not find."));
         return ResponseEntity.ok(reponseRepository.findByRequete(requete));
     }
 

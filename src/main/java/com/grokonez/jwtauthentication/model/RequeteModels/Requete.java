@@ -34,7 +34,7 @@ public class Requete {
     private User user ;
     private boolean duplique;
 
-    @OneToMany (mappedBy = "requete")
+    @OneToMany (mappedBy = "requete",cascade = CascadeType.ALL)
     List<Reponse> reponse;
 
     @ManyToOne
@@ -51,5 +51,9 @@ public class Requete {
 
     public String getUser() {
         return this.user.getEmail();
+    }
+
+    public String getType(){
+        return  this.type.getType();
     }
 }

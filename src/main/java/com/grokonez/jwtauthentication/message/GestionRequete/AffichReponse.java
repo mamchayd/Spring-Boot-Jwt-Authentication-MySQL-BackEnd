@@ -4,16 +4,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class AffichRequete {
+public class AffichReponse {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
 
-    private String username;
+    private Long idRequete;
 
-
-    public String getUsername() {
-        return username;
+    public Long getIdRequete() {
+        return idRequete;
     }
 }

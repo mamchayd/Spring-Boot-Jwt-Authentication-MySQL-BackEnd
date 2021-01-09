@@ -41,4 +41,8 @@ public class Reponse {
 
     }
 
+    public Long getIdRequete(){
+        return this.requete.getId();
+    }
+
 }

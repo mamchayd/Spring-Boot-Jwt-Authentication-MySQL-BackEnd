@@ -4,6 +4,7 @@ package com.grokonez.jwtauthentication.controller.RequetesControler;
 
 import com.grokonez.jwtauthentication.message.GestionRequete.AddRequete;
 import com.grokonez.jwtauthentication.message.GestionRequete.AffichRequete;
+import com.grokonez.jwtauthentication.message.GestionRequete.ChercheRequete;
 import com.grokonez.jwtauthentication.message.response.ResponseMessage;
 import com.grokonez.jwtauthentication.model.RequeteModels.Requete;
 import com.grokonez.jwtauthentication.model.RequeteModels.TypeRequete;
@@ -70,6 +71,13 @@ public class RequeteControler {
         User user= userRepository.findByUsername(affichRequete.getUsername()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
 
         return ResponseEntity.ok(requeteRepository.findByUser(user));
+    }
+
+    @PostMapping ("/api/requete/chercheRequete")
+    public ResponseEntity<?> chercheRequeParType(@Valid @RequestBody ChercheRequete chercheRequete) {
+        //TypeRequete user= typeReqRepository.findByType(chercheRequete.getType()).orElseThrow(() -> new RuntimeException("Fail! -> Cause: User not find."));
+
+        return ResponseEntity.ok(requeteRepository.findByTitre(chercheRequete.getTitre()));
     }
 
 
